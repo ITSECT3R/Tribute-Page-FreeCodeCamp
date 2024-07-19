@@ -138,13 +138,17 @@ li{
     font-size: 2rem;
 }
 
-
-
 .video-1{
     width: 100%;
     max-width: 1000px;
-    height: 300px;
-    margin-bottom: 30px;
+    margin-bottom: 30px;   
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 1),6px 8px 14px rgba(0, 0, 0, 1);
+    border-radius: 40px;
+
 }
 
 /* section 2 of elon musk  */
@@ -163,6 +167,8 @@ li{
     max-width: 300px;
     border-radius: 20px;
     max-height: 500px;
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 1),6px 8px 14px rgba(0, 0, 0, 1);
+
 }
 
 .left-side img{
@@ -172,6 +178,7 @@ li{
     max-width: 300px;
     border-radius: 20px;
     max-height: 500px;
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 1),6px 8px 14px rgba(0, 0, 0, 1);
 }
 
 .left-side-img2{
