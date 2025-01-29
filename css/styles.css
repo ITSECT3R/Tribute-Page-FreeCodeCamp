@@ -1,3 +1,17 @@
+:root {
+    --background-color: rgb(42, 42, 42);
+    --main-background-color: rgb(62, 62, 62);
+    --border-color: black;
+    --title-color: rgb(255, 221, 72);
+    --title-border-color: white;
+    --title-text-color: rgb(219, 219, 219);
+    --image-border-color: rgb(255, 221, 72);
+    --figcaption-color: rgb(255, 255, 255);
+    --section-title-color: rgb(69, 255, 75);
+    --link-color: #54b3d6;
+    --link-hover-color: #000;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -6,11 +20,11 @@
 }
 
 body{
-    background-color: rgb(42, 42, 42);
+    background-color: var(--background-color);
 }
 
 main{
-    background-color: rgb(62, 62, 62);
+    background-color: var(--main-background-color);
     margin: 15px 10px;
     border-radius: 15px;
     overflow: hidden;
@@ -46,7 +60,7 @@ li{
 #title{ 
     text-align: center;
     margin-bottom: 30px;
-    border: 3px solid white;
+    border: 3px solid var(--title-border-color);
     border-radius: 10px;
     max-width:1300px;
     margin: auto;
@@ -57,12 +71,12 @@ li{
 }
 
 #title h1{
-    color:rgb(255, 221, 72);
+    color: var(--title-color);
     font-size: 6rem;
 }
 
 #title p{
-    color:rgb(219, 219, 219);
+    color: var(--title-text-color);
     font-size: 2rem;
     font-weight: bold;
 }
@@ -81,13 +95,13 @@ li{
     height: auto;
     display: block;
     border-radius: 30px;
-    border: rgb(255, 221, 72) 5px solid;
+    border: var(--image-border-color) 5px solid;
     margin-bottom: 20px;
     z-index: 1;
 }
 
 #img-div figcaption{
-    color: rgb(255, 255, 255);
+    color: var(--figcaption-color);
     font-size: 1.3rem;
     font-weight: bold;
     text-align: center;
@@ -168,7 +182,7 @@ li{
 /* section 2 of elon musk  */
 
 .title-section2{
-    color: rgb(69, 255, 75);
+    color: var(--section-title-color);
     font-style: bold;
 }
 
@@ -195,9 +209,9 @@ li{
 a {
     background-image: linear-gradient(
       to right,
-      #54b3d6,
-      #54b3d6 50%,
-      #000 50%
+      var(--link-color),
+      var(--link-color) 50%,
+      var(--link-hover-color) 50%
     );
     background-size: 200% 100%;
     background-position: -100%;
@@ -211,7 +225,7 @@ a {
   
 a:before{
     content: '';
-    background: #54b3d6;
+    background: var(--link-color);
     display: block;
     position: absolute;
     bottom: -3px;
